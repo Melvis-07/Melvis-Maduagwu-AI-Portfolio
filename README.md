@@ -1,1 +1,1 @@
-Getting started with Github
+Getting started with Github.
