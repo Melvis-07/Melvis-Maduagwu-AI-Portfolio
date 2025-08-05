@@ -1,1 +1,1 @@
-This is a comprehensive representsation of my AI projects. These include projects in Natural Language processing and Computer vision.
+My name is Melvis Mduagwu and this is a comprehensive representsation of my AI projects. These include projects in Natural Language processing and Computer vision. Some of the skills i have developed are python programming and the ability to work with teammates.
