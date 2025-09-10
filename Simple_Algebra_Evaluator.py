@@ -1,0 +1,35 @@
+import re
+
+def eval_algebra(lhs, operator, rhs, result):
+    if rhs == "x":  # Case: x is on the right-hand side of operator
+        if operator == "+":
+            return result - int(lhs)
+        return int(lhs) - result
+
+    if lhs == "x":  # Case: x is on the left-hand side of operator
+        if operator == "+":
+            return result - int(rhs)
+        return result + int(rhs)
+
+
+if __name__ == "__main__":
+    equation = input("evalAlgebra: ").strip()
+
+    # Regex pattern to match equations like "x+5=9" or "5 - x = 2"
+    pattern = r"^\s*(x|\d+)\s*([+-])\s*(x|\d+)\s*=\s*(\d+)\s*$"
+    match = re.match(pattern, equation)
+
+    if not match:
+        raise ValueError(
+            "Equation must be in the form: '<value/x> <+/-> <value/x> = <value>'"
+        )
+
+    lhs, operator, rhs, result = match.groups()
+
+    result = int(result)
+
+    try:
+        output = eval_algebra(lhs, operator, rhs, result)
+        print(f"output = {output}")
+    except ValueError as e:
+        print(f"Error: {e}")
