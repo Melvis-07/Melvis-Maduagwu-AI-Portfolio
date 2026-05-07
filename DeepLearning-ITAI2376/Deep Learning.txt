@@ -1,0 +1,1 @@
+This course brings to light the AI method of Deep learning. It encompasses the processes of training Deep learning models; the important components and the sequence of steps.
