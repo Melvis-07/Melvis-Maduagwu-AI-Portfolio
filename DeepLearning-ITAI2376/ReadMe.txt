@@ -1,1 +1,1 @@
-This course brings to light the AI method of Deep learning. It encompasses the processes of training Deep learning models; the important components and the sequence of steps.
+This course brings to light the AI method of Deep learning. It encompasses the processes of training Deep learning models; the important components and the sequence of steps. My project here include training Convolutional Neural Networks, working with RNNs and Transformers, training Diffusion models and building AI agents
